@@ -1,0 +1,29 @@
+{
+   "background": {
+      "persistent": true,
+      "scripts": [ "js/background.js" ]
+   },
+   "browser_action": {
+      "default_title": "stopwatch",
+      "default_icon": "stopwatch.png"
+   },
+   "content_scripts": [
+      {
+         "matches": [ "<all_urls>" ],
+         "css": [ "css/content.css" ],
+         "js": [ "js/content.js" ]
+      }
+   ],
+   "web_accessible_resources": [
+      "css/content.css",
+      "js/content.js"
+   ],
+   "description": "stopwatch",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAjh8fUpbDw7z0Me7bbA6ibP5Wmc0glnbmQCooSVrl6ULOE+f040//cJcFU6TKbtRg6ev0945KXtGcGwFfchJNW9YyC4szw+kPP8r6Oj3yvOtXRczos6RYusU8nccGItTD1DHhQF5AIDVDXZ/4Z39TqZl70F6sTOFbCqP2Ar3S90ZhXAwV8LWawPNU4itzvVLHzh5su5xqVUXDalKcqa/iCroPgI9fuCjjDVxI5IxU7AM3eU05N6WkfB8yxEMLaR95yCApl3gj+17vPeilL5eLkp1LYoKIuAlu/YSCFbf1NWvG4mUlcUHDfPiv2k0EIwAO6vAV/QPJLVDB6H0v7dfNcQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "22",
+   "name": "Stopwatch For Chrome",
+   "permissions": [ "<all_urls>", "tabs", "storage" ],
+   "short_name": "Stopwatch",
+   "version": "1.0.0"
+}

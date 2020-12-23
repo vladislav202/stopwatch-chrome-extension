@@ -1,0 +1,157 @@
+:root {
+  --sw-position-top: 10px;
+  --sw-position-right: 10px;
+}
+
+#__stop_watch__ .b3de_stopwatch__container {
+  position: fixed;
+  z-index: 999999997;
+  top: var(--sw-position-top);
+  right: var(--sw-position-right);
+  width: 400px;
+  height: auto;
+  background-color: #fff;
+  box-shadow: -4px 8px 24px 0 rgba(0, 0, 0, 0.2);
+  font-family: 'Open Sans', sans-serif;
+  color: #212529;
+  line-height: 1.5;
+  box-sizing: border-box;
+}
+
+#__stop_watch__ .b3de_stopwatch__container--hidden {
+  display: none;
+}
+
+#__stop_watch__ .b3de_stopwatch__inner {
+  padding: 15px 20px;
+}
+
+#__stop_watch__ .b3de_stopwatch__time {
+  font-weight: bold;
+  text-align: center;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  font-family: 'Open Sans', sans-serif !important;
+  font-size: 4em;
+  margin-bottom: 6px;
+}
+
+#__stop_watch__ .b3de_stopwatch__btn {
+  display: inline-block;
+  font-weight: 400;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  user-select: none;
+  border: 1px solid transparent;
+  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+  margin: 0;
+  padding: 2px 8px;
+  font-size: 14px;
+  line-height: 1.5;
+  border-radius: 3px;
+  background-image: none;
+  cursor: pointer;
+  min-height: auto;
+}
+
+#__stop_watch__ .b3de_stopwatch__btn-sp {
+  color: #343a40;
+  background-color: transparent;
+  border-color: #343a40;
+}
+
+#__stop_watch__ .b3de_stopwatch__btn-sp:hover {
+  color: #fff;
+  background-color: #343a40;
+  border-color: #343a40;
+  text-decoration: none;
+}
+
+#__stop_watch__ .b3de_stopwatch__btn-sp:focus {
+  box-shadow: 0 0 0 0.2rem rgba(52,58,64,.5);
+  text-decoration: none;
+}
+
+#__stop_watch__ .b3de_stopwatch__btn-rs {
+  color: #dc3545;
+  background-color: transparent;
+  border-color: #dc3545;
+}
+
+#__stop_watch__ .b3de_stopwatch__btn-rs:hover {
+  color: #fff;
+  background-color: #dc3545;
+  border-color: #dc3545;
+  text-decoration: none;
+}
+
+#__stop_watch__ .b3de_stopwatch__btn-rs:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220,53,69,.5);
+  text-decoration: none;
+}
+
+#__stop_watch__ .b3de_stopwatch__bgroup {
+  position: relative;
+  display: flex;
+  vertical-align: middle;
+  justify-content: center;
+}
+
+#__stop_watch__ .b3de_stopwatch__bgroup .b3de_stopwatch__btn {
+  margin-left: -1px;
+}
+
+#__stop_watch__ .b3de_stopwatch__bgroup .b3de_stopwatch__btn:first-child {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-left: 0;
+}
+
+#__stop_watch__ .b3de_stopwatch__bgroup .b3de_stopwatch__btn:not(:first-child) {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+#__stop_watch__ .b3de_stopwatch__close {
+  position: absolute;
+  display: inline-block;
+  cursor: pointer;
+  top: 5px;
+  right: 5px;
+  border: 2px solid #343a40;
+  background-color: transparent;
+  user-select: none;
+  text-align: center;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  margin: 0;
+  min-width: auto;
+  min-height: auto;
+  line-height: 25px;
+  border-radius: 50%;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+#__stop_watch__ .b3de_stopwatch__close:before, #__stop_watch__ .b3de_stopwatch__close:after {
+  position: absolute;
+  left: 9px;
+  content: ' ';
+  top: 2px;
+  height: 16px;
+  width: 2px;
+  background-color: #343a40;
+  box-sizing: border-box;
+}
+#__stop_watch__ .b3de_stopwatch__close:before {
+  transform: rotate(45deg);
+}
+#__stop_watch__ .b3de_stopwatch__close:after {
+  transform: rotate(-45deg);
+}
+
+#__stop_watch__ .b3de_stopwatch__close:hover {
+  background-color: #343a4031;
+}
